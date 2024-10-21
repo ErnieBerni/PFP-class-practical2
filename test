@@ -1,0 +1,37 @@
+while <10:
+n1 = input("First number? ")
+n2 = input("Second number? ")
+
+
+def p(n1, n2):
+    return int(n1) + int(n2)
+
+
+def n(n1, n2):
+    return int(n1) - int(n2)
+
+
+def m(n1, n2):
+    return int(n1) * int(n2)
+
+
+def s(n1, n2):
+    return int(n1) / int(n2)
+
+
+op = input(
+    "An arithmetic operation(+ for addition, - for subtraction, * for multiplication, / for division, press q to quit  "
+)
+if op == "+":
+    print(p(n1, n2))
+elif op == "-":
+    print(n(n1, n2))
+elif op == "*":
+    print(m(n1, n2))
+elif op == "/":
+    print(s(n1, n2))
+elif op == "q":
+    print("program has stopped")
+        break
+else:
+    print('This "operator" is invalid(and square root does not currently exist here)')
